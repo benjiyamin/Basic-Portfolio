@@ -35,6 +35,8 @@ img.profile-img {
     float: left;
     margin-top: 20px;
     margin-right: 20px;
+    width: 300px;
+    max-width: 100%;
 }
 
 .nav-wrapper {
@@ -67,7 +69,6 @@ img.profile-img {
 }
 
 .nav-links {
-    /*float: right;*/
     position: absolute;
     right: 0;
     top: 50%;
@@ -78,8 +79,11 @@ img.profile-img {
     float: left;
     margin-right: 20px;
     padding: 20px 10px 20px 10px;
-    /*position: absolute;
-    top: 50%;*/
+}
+
+.nav-title>a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .nav-link>a {
@@ -91,8 +95,6 @@ img.profile-img {
     width: 960px;
     max-width: 100%;
     margin: 50px auto 50px auto;
-    /*min-height: 100%;*/
-    /*margin-bottom: -50px;*/
 }
 
 .main-content {
@@ -127,7 +129,8 @@ img.profile-img {
 }
 
 .card-row {
-    overflow: auto
+    overflow: auto;
+    clear: both;
 }
 
 .card {
@@ -135,6 +138,7 @@ img.profile-img {
     width: 280px;
     margin: 10px;
     position: relative;
+    max-width: 100%;
 }
 
 .card>img {
@@ -175,6 +179,16 @@ img.profile-img {
     margin: 0;
 }
 
-.footer > p {
+.footer>p {
     margin: 0;
 }
+
+/* Responsive columns - one column layout (vertical) on small screens */
+/*
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        display: block;
+    }
+}
+*/
